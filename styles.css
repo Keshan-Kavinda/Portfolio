@@ -363,6 +363,12 @@ p {
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
+  
+
+  .about__subtitle {
+    
+  }
+
 }
 .about__img {
   justify-self: center;
