@@ -558,3 +558,16 @@ p {
     width: 450px;
   }
 }
+.project-content {
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.project-img {
+  flex: 0 0 auto; /* Don't grow or shrink */
+  margin-right: 20px; /* Add spacing between image and text */
+}
+
+.project-description {
+  flex: 1; /* Grow to fill remaining space */
+}
