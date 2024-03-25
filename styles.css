@@ -116,6 +116,7 @@ img {
   flex: 1;
   margin:  10px;
   border-radius: 15px;
+  min-width: min-content;
 }
 
 .experience-sub-title {
@@ -308,6 +309,7 @@ p {
 }
 .home__data {
   align-self: center;
+  padding-left: 15px;
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -319,6 +321,7 @@ p {
 .home__social {
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
 }
 .home__social-icon {
   width: max-content;
@@ -570,4 +573,14 @@ p {
 
 .project-description {
   flex: 1; /* Grow to fill remaining space */
+}
+@media screen and (max-width: 768px) {
+  .project-content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .project-img {
+      order: -1; /* Move the image above the text */
+      margin-bottom: 20px; /* Add some spacing between image and text */
+  }
 }
